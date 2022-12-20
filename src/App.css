@@ -11,11 +11,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+
+}
+body{
+  overflow-x: hidden;
+  background-color: rgb(20, 20, 20);
 }
 
 .position{
   width: 90vw;
-  border: 1px solid blue;
+  max-width: 2500px;
   display:block;
-
+ background-color: rgb(41, 41, 41);
 }
+
