@@ -1,10 +1,10 @@
-:root{
-  --text-primary:#000;
-  --bgPrimary:#fff;
- --bgSecondary: #F9F9F9;
- --pink: #0071bd;
- --light-blue: #e6f7ff;
- --border: #d9d9d9;
+:root {
+  --text-primary: #000;
+  --bgPrimary: #fff;
+  --bgSecondary: #F9F9F9;
+  --pink: #0071bd;
+  --light-blue: #e6f7ff;
+  --border: #d9d9d9;
 }
 
 * {
@@ -14,15 +14,21 @@
 
 
 }
-body{
+
+body {
   overflow-x: hidden;
   background-color: rgb(20, 20, 20);
 }
 
-.position{
+.position {
   width: 90vw;
   max-width: 2500px;
-  display:block;
- background-color: rgb(41, 41, 41);
+  display: block;
+  background-color: rgb(41, 41, 41);
 }
 
+.runaBox {
+  background-color: rgb(31, 31, 31);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
