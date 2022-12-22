@@ -61,7 +61,7 @@ const Content = () => {
             }
         },
         {
-            foto: AKALI,
+            foto: KLED,
             runaPrimaria: '',
             runaSecundaria: '',
             counters: {
@@ -342,6 +342,7 @@ const Content = () => {
         },
     ]
     const [estado, setEstado] = useState(true)
+    const [estado1, setEstado1] = useState(false)
 
     console.log(heros)
     return (
@@ -353,7 +354,7 @@ const Content = () => {
                     return (
                         <div style={{ width: '28%', height: '75vh', float: 'left', marginLeft: '4%', marginTop: '50px', maxHeight: '700px', backgroundColor: '#323336', boxShadow: 'rgb(0 0 0 / 19%) 0px 10px 20px, rgb(0 0 0 / 23%) 0px 6px 6px' }}>
 
-                            <div style={{ display: 'flex', height: '25%' }}>
+                            <div className='tittleCard' style={{ display: 'flex', height: '25%' }}>
                                 <div style={{ width: '30%', height: '100%' }}>
                                     <img src={foto} style={{ width: '100%', height: '100%' }}></img>
                                 </div>
@@ -370,28 +371,49 @@ const Content = () => {
                             </div>
                             <div style={{ marginTop: '5%', width: '90%', marginLeft: '5%' }}>
 
-                                <button style={{ width: '20%', height: '100%', backgroundColor: 'rgb(30, 30, 30)', marginLeft: '14.5%', padding: '2%', color: 'white' }}>Runas</button>
-                                <button style={{ width: '20%', height: '100%', backgroundColor: 'rgb(30, 30, 30)', marginLeft: '5%', padding: '2%', color: 'white' }}>Counters</button>
-                                <button style={{ width: '20%', height: '100%', backgroundColor: 'rgb(30, 30, 30)', marginLeft: '5%', padding: '2%', color: 'white', cursor: 'pointer' }}>Buffers</button>
+                                <button className='button' onClick={() => setEstado(true)} style={{ marginLeft: '15%' }}>Runas</button>
+                                <button className='button' onClick={() => setEstado(false)} >Counters</button>
+                                <button className='button' >Buffers</button>
                             </div>
-                            {estado ? <div className='runaBox' style={{ padding: '10px', height: '56%', width: '90%', marginLeft: '5%', marginTop: '4%' }}>
+                            {estado && <div className='runaBox' style={{ padding: '10px', height: '56%', width: '90%', marginLeft: '5%', marginTop: '4%' }}>
                                 <div style={{ width: '100%', height: '33%', display: 'flex', justifyContent: 'center' }}>
-                                    <img src={CONQUEROR} style={{ width: '26%', height: '100%' }}></img>
-                                    <img src={FEITICARIA} style={{ width: '25%', height: '100%', marginLeft: '10%' }}></img>
+                                    <img src={CONQUEROR} style={{ width: '32%', height: '100%' }}></img>
+                                    <img src={FEITICARIA} style={{ width: '32%', height: '100%', marginLeft: '4%' }}></img>
                                 </div>
                                 <div style={{ width: '100%', height: '18%', display: 'flex', justifyContent: 'center', marginTop: '2%' }}>
-                                    <img src={PRESENCA} style={{ width: '12%', height: '90%', marginTop: '2%' }}></img>
-                                    <img src={TRANSCENDENCIA} style={{ width: '12%', height: '90%', marginTop: '2%', marginLeft: '23%' }}></img>
+                                    <img src={PRESENCA} style={{ width: '15%', height: '90%', marginTop: '2%' }}></img>
+                                    <img src={TRANSCENDENCIA} style={{ width: '15%', height: '90%', marginTop: '2%', marginLeft: '23%' }}></img>
                                 </div>
                                 <div style={{ width: '100%', height: '18%', display: 'flex', justifyContent: 'center', marginTop: '2%' }}>
-                                    <img src={CELERIDADE} style={{ width: '12%', height: '90%', marginTop: '2%' }}></img>
-                                    <img src={CHAMUSCAR} style={{ width: '12%', height: '90%', marginTop: '2%', marginLeft: '23%' }}></img>
+                                    <img src={CELERIDADE} style={{ width: '15%', height: '90%', marginTop: '2%' }}></img>
+                                    <img src={CHAMUSCAR} style={{ width: '15%', height: '90%', marginTop: '2%', marginLeft: '23%' }}></img>
                                 </div>
                                 <div style={{ width: '100%', height: '18%', display: 'flex', justifyContent: 'center', marginRight: '5%', marginTop: '2%' }}>
-                                    <img src={MORTE} style={{ width: '12%', height: '90%', marginTop: '2%', marginRight: '35%' }}></img>
+                                    <img src={MORTE} style={{ width: '15%', height: '90%', marginTop: '2%', marginRight: '38%' }}></img>
                                 </div>
 
-                            </div> : <div></div>}
+                            </div>}
+                            {estado1 && <div className='runaBox' style={{ padding: '10px', height: '56%', width: '90%', marginLeft: '5%', marginTop: '4%' }}>
+                                <div style={{ height: '30%', border: '1px solid red' }}>
+                                    <img src={KLED} style={{ height: '100%', border: '1px solid red', width: '25%', float: 'left' }}></img>
+                                    <div style={{ height: '100%', border: '1px solid red', width: '75%', float: 'left', textAlign: 'left', wordWrap: 'break-word', color: 'white', padding: '5px' }}>
+                                        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                                    </div>
+                                </div>
+                                <div style={{ height: '30%', border: '1px solid red', marginTop: '4%' }}>
+                                    <img src={ZED} style={{ height: '100%', border: '1px solid red', width: '25%', float: 'left' }}></img>
+                                    <div style={{ height: '100%', border: '1px solid red', width: '75%', float: 'left', textAlign: 'left', wordWrap: 'break-word', color: 'white', padding: '5px' }}>
+                                        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                                    </div>
+                                </div>
+                                <div style={{ height: '30%', border: '1px solid red', marginTop: '4%' }}>
+                                    <img src={LEESIN} style={{ height: '100%', border: '1px solid red', width: '25%', float: 'left' }}></img>
+                                    <div style={{ height: '100%', border: '1px solid red', width: '75%', float: 'left', textAlign: 'left', wordWrap: 'break-word', color: 'white', padding: '5px' }}>
+                                        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                                    </div>
+                                </div>
+                            </div>}
+
 
                         </div>
                     )

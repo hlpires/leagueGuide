@@ -21,14 +21,45 @@ body {
 }
 
 .position {
-  width: 90vw;
+  width: 100vw;
   max-width: 2500px;
   display: block;
   background-color: rgb(41, 41, 41);
+
+  background-repeat: no-repeat;
+  filter: brightness(100%);
 }
 
 .runaBox {
   background-color: rgb(31, 31, 31);
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow: rgba(224, 219, 219, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.tittleCard {
+
+  padding: 20px;
+}
+
+.banner {
+  background-image: url(./components/imgs/personalbanner.png);
+  width: 100vw;
+  background-size: 100% 100%;
+  max-width: 2500px;
+  filter: brightness(40%);
+}
+
+.button {
+  width: 20%;
+  height: 100%;
+  background-Color: rgb(30, 30, 30);
+  margin-Left: 5%;
+  padding: 2%;
+  color: white;
+  cursor: pointer
+}
+
+.button:hover {
+  background-color: red;
+  color: black;
 }
