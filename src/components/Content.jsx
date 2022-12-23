@@ -34,6 +34,7 @@ const Content = () => {
     const heros = [
         {
             foto: AKALI,
+            state:true,
             runaPrimaria: '',
             runaSecundaria: '',
             counters: {
@@ -349,7 +350,7 @@ const Content = () => {
         <div className='imageBc' style={{ display: 'flex', justifyContent: 'center' }}>
             <div className='position'>
 
-                {heros.map(({ foto, counters, good, spell }) => {
+                {heros.map(({ foto, counters, good, spell,state}) => {
                     console.log(foto)
                     return (
                         <div style={{ width: '28%', height: '75vh', float: 'left', marginLeft: '4%', marginTop: '50px', maxHeight: '700px', backgroundColor: '#323336', boxShadow: 'rgb(0 0 0 / 19%) 0px 10px 20px, rgb(0 0 0 / 23%) 0px 6px 6px' }}>
@@ -371,7 +372,7 @@ const Content = () => {
                             </div>
                             <div style={{ marginTop: '5%', width: '90%', marginLeft: '5%' }}>
 
-                                <button className='button' onClick={() => setEstado(true)} style={{ marginLeft: '15%' }}>Runas</button>
+                                <button className='button' onClick={() => setEstado(state)} style={{ marginLeft: '15%' }}>Runas</button>
                                 <button className='button' onClick={() => setEstado(false)} >Counters</button>
                                 <button className='button' >Buffers</button>
                             </div>
