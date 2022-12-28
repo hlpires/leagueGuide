@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
 import AKALI from './imgs/AKALI.png'
 import ZED from './imgs/ZED.png'
 import LEESIN from './imgs/LEESIN.png'
@@ -65,20 +64,7 @@ import gragas from './imgs/gragas.png'
 import tahm from './imgs/tahm.png'
 import IMPETO from './imgs/impeto.png'
 const Content = () => {
-    {/*AKALI --> (Exaust e Ignite) Zed, Kled, (Rengar = ganhavel), Lee sin
-    NOCTURNE --> (Exaust e Ignite) Khazix, Akali, Warwick, Leblanc
-    REKSAI --> (Barreira e Ignite), Kled, Nocturne, Rumble, kha'zix
-    KHAZIX --> (Barreira e Ignite) Reksai, Rengar, Aatrox, Akali
-    RUMBLE --> (Exaust e Ignite) Aatrox(item = berrante), Darius, Rengar, Olaf
-    LEE'SIN --> (Exaust e Ignite) Darius, Renekton, Aatrox, Rek'sai, Noctuarne, Warwick
-    RENGAR --> (Exaust e Ignite) Darius, Aatrox, Nocturne, Irelia
-    ZED --> (Exaust e Ignite) Kha zix, Rumble, Rek`sai, Lee sin, Udyr
-    BARDO --> (Exaust e Ignite) Darius, Rumble
-    LEBLANC --> (Barreira ou Exaust e Ignite) Akali, Rumble, Lee sin, Khazix
-    TRYNDAMERE --> BAN
-    RENEKTON --> (Exaust e Ignite) Quinn, Rumble, Kennen, Aatrox, Leblanc
-    KLED --> (Exaust e Ignite) Warwick, Zed, Leblanc
-    AATROX --> (Exaust e Ignite, Bolinha e ig pra noc)Nocturne, Akali, Irelia, Kled */}
+  
 
     const heros = [
         {
@@ -1330,18 +1316,19 @@ const Content = () => {
             },   
         },
     ]
-    const [estado, setEstado] = useState(true)
+
 
 
     console.log(heros)
     return (
         <div className='imageBc' style={{ display: 'flex', justifyContent: 'center' }}>
-            <div className='position'>
+            <div className='position' style = {{paddingBottom:'100px'}}>
 
                 {heros.map(({ foto, counters, good, spell, runaPrimaria, runaSecundaria, tier, nome }) => {
 
                     return (
                         <Cards
+                            key = {nome}
                             foto={foto}
                             counters={counters}
                             good={good}

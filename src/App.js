@@ -2,6 +2,8 @@ import Content from './components/Content';
 import './App.css';
 import Header from './components/Header';
 import Banner from './components/Banner';
+import Footer from './components/Footer';
+
 
 
 function App() {
@@ -10,6 +12,7 @@ function App() {
       <Header />
       <Banner />
       <Content />
+      <Footer/>
     </div>
   );
 }
