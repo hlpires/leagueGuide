@@ -85,7 +85,7 @@ body::-webkit-scrollbar-thumb {
    /* creates padding around scroll thumb */
 }
 
-@media  (max-width:1024px){
+@media  (max-width:1025px){
 
   .card{
     border: 1px solid red;
