@@ -8,7 +8,7 @@ const Header = () => {
           <a target="_blank" rel="noopener noreferrer" href='https://www.twitch.tv/inefavel1'><img alt='' src={SAMUCA} style={{ width: '120px', height: '100px', float: 'left' }}>
 
           </img></a>
-          <a target="_blank" rel="noopener noreferrer" href='https://www.twitch.tv/inefavel1'><div> <p style={{ float: 'left', color: 'white', marginLeft: '2%', marginTop: '2.5%', fontSize: '30px',cursor:'pointer' }}>TWTV/INEFAVEL1</p></div></a>
+          <a target="_blank" rel="noopener noreferrer" href='https://www.twitch.tv/inefavel1'><div> <p className = 'text' style={{ float: 'left', color: 'white', marginLeft: '2%', marginTop: '2.5%', fontSize: '30px',cursor:'pointer' }}>TWTV/INEFAVEL1</p></div></a>
         </div>
       </div>
     </div >

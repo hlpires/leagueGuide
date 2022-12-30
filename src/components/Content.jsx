@@ -578,7 +578,7 @@ const Content = () => {
                 },
                 2: {
                     nome: '',
-                    imagem: RENGAR
+                    imagem: KHA
                 },
             },
             good: {
