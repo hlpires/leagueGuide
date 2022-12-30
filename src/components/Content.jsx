@@ -74,7 +74,7 @@ import berrante from './imgs/berrante.png'
 import gota from './imgs/lagrima.png'
 import espada from './imgs/espada.png'
 import bota from './imgs/bota.png'
-
+import interrogas from './imgs/interrogas.png'
 
 const Content = () => {
   
@@ -258,15 +258,15 @@ const Content = () => {
             counters: {
                 0: {
                     nome: '',
-                    imagem: 'ZED'
+                    imagem: interrogas
                 },
                 1: {
                     nome: '',
-                    imagem: 'ZED'
+                    imagem: interrogas
                 },
                 2: {
                     nome: '',
-                    imagem: 'ZED'
+                    imagem: interrogas
                 },
             },
             good: {
@@ -847,11 +847,11 @@ const Content = () => {
                     nome: 'Zed'
                 },
                 1: {
-                    imagem: 'LEESIN',
+                    imagem: interrogas,
                     nome: 'Leesin'
                 },
                 2: {
-                    imagem: 'KLED',
+                    imagem: interrogas,
                     nome: 'Kled'
                 },
             },
@@ -1371,7 +1371,7 @@ const Content = () => {
                     nome: 'Leesin'
                 },
                 2: {
-                    imagem: 'KLED',
+                    imagem: interrogas,
                     nome: 'Kled'
                 },
             },
@@ -1423,7 +1423,7 @@ const Content = () => {
                     nome: 'Leesin'
                 },
                 2: {
-                    imagem: 'KLED',
+                    imagem: interrogas,
                     nome: 'Kled'
                 },
             },
