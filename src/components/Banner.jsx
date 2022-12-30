@@ -12,8 +12,8 @@ const Banner = () => {
     return (
         <div style={{ display: 'flex', justifyContent: 'center' }}>
             <div className='banner' style={{ height: '80vh', maxHeight: '1100px',display:'flex',justifyContent:'center' }}>
-            <div style ={{alignSelf:'center', minWidth:'500px',maxWidth:'1000px'}}>
-            <TwitchEmbed channel="inefavel1"  autoplay muted withChat = {false} darkMode={true} hideControls onVideoReady={handleReady} />
+            <div style ={{alignSelf:'center',maxWidth:'1000px'}}>
+            <TwitchEmbed channel="inefavel1" width = {1000} autoplay muted withChat = {false} darkMode={true} hideControls onVideoReady={handleReady} />
             </div>
             </div>
         </div >

@@ -10,7 +10,7 @@ const Cards = ({foto,counters,good,spell,runaPrimaria,runaSecundaria,tier,nome,i
     const [estado1, setEstado1] = useState(false)
     const [estado2, setEstado2] = useState(false)
     return (
-        <div style={{ borderRadius:'15px',width: '26%', height: '700px', float: 'left', marginLeft: '6vw', marginTop: '50px', maxHeight: '700px', backgroundColor: '#323336', boxShadow: 'rgb(0 0 0 / 19%) 0px 10px 20px, rgb(0 0 0 / 23%) 0px 6px 6px',border:'0.5px solid black' }}>
+        <div style={{ borderRadius:'15px',width: '26%', height: '700px', float: 'left', marginLeft: '6vw', marginTop: '50px', maxHeight: '700px', backgroundColor: '#323336', boxShadow: 'rgb(0 0 0 / 19%) 0px 10px 20px, rgb(0 0 0 / 23%) 0px 6px 6px',border:'0.5px solid black' }} className = 'card'>
 
             <div className='tittleCard' style={{ display: 'flex', height: '25%' }}>
                 <div style={{ width: '30%', height: '100%' }}>

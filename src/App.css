@@ -84,3 +84,15 @@ body::-webkit-scrollbar-thumb {
   background-color: rgba(255, 0, 0, 0.479);    /* color of the scroll thumb */
    /* creates padding around scroll thumb */
 }
+
+@media  (max-width:1024px){
+
+  .card{
+    border: 1px solid red;
+    width: 90vw !important;
+    height: 80vh !important;
+  }
+  .banner{
+    display: none !important;
+  }
+}
