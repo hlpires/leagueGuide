@@ -1350,15 +1350,15 @@ const Content = () => {
             counters: {
                 0: {
                     nome: '',
-                    imagem: ZED
+                    imagem: darius
                 },
                 1: {
                     nome: '',
-                    imagem: ZED
+                    imagem: Aatrox
                 },
                 2: {
                     nome: '',
-                    imagem: ZED
+                    imagem: RENGAR
                 },
             },
             good: {
