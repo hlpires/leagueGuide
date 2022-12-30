@@ -51,10 +51,10 @@ body {
 }
 
 .button {
-  width: 20%;
+
   height: 100%;
   background-Color: rgb(30, 30, 30);
-  margin-Left: 5%;
+  margin-Left: 1%;
   padding: 2%;
   color: white;
   cursor: pointer

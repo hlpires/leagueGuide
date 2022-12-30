@@ -63,14 +63,83 @@ import darius from './imgs/darius.png'
 import gragas from './imgs/gragas.png'
 import tahm from './imgs/tahm.png'
 import IMPETO from './imgs/impeto.png'
+import barreira from './imgs/barreira.png'
+import bolinha from './imgs/bolinha.png'
+import orbeguard from './imgs/orbeguard.png'
+import martelo from './imgs/martelo.png'
+import lamina from './imgs/lamina.png'
+import perola from './imgs/perola.png'
+import ghost from './imgs/ghost.png'
+import berrante from './imgs/berrante.png'
+import gota from './imgs/lagrima.png'
+import espada from './imgs/espada.png'
+import bota from './imgs/bota.png'
+
+
 const Content = () => {
   
 
     const heros = [
         {
+            nome: 'Rumble',
+            tier: 'S+',
+            itens:{
+                0:orbeguard,
+                1:perola
+            },
+            foto: RUMBLE,
+            runaPrimaria: {
+                0: COMETA,
+                1: MANTOS,
+                2: TRANSCENDENCIA,
+                3: CHAMUSCAR
+            },
+            runaSecundaria: {
+                0: DETER,
+                1: OSSO,
+                2: revitalizar
+            },
+            counters: {
+                0: {
+                    nome: '',
+                    imagem: darius
+                },
+                1: {
+                    nome: '',
+                    imagem: Aatrox
+                },
+                2: {
+                    nome: '',
+                    imagem: RENGAR
+                },
+            },
+            good: {
+                0: {
+                    imagem: ZED,
+                    nome: 'Zed'
+                },
+                1: {
+                    imagem: LEBLANC,
+                    nome: 'Leesin'
+                },
+                2: {
+                    imagem: QUINN,
+                    nome: 'Kled'
+                },
+            },
+            spell: {
+                0: IGNITE,
+                1: barreira
+            },   
+        },
+        {
             nome: 'Akali',
-            tier: 'S',
+            tier: 'S+',
             foto: AKALI,
+            itens:{
+                0:orbeguard,
+                1:perola
+            },
             runaPrimaria: {
                 0: CONQUEROR,
                 1: PRESENCA,
@@ -112,13 +181,589 @@ const Content = () => {
             },
             spell: {
                 0: IGNITE,
-                1: EXAUST
+                1: barreira
             }
+        },
+        {
+            nome: 'Bardo',
+            tier: 'S+',
+            itens:{
+                0:berrante,
+                1:bota
+            },
+            foto: BARDO,
+            runaPrimaria: {
+                0: RITMO,
+                1: PRESENCA,
+                2: ESPONTANIEDADE,
+                3: GOLPE
+            },
+            runaSecundaria: {
+                0: DETER,
+                1: OSSO,
+                2: revitalizar
+            },
+            counters: {
+                0: {
+                    nome: '',
+                    imagem: YORICK
+                },
+                1: {
+                    nome: '',
+                    imagem: RUMBLE
+                },
+                2: {
+                    nome: '',
+                    imagem: EVELYN
+                },
+            },
+            good: {
+                0: {
+                    imagem: RENEKTON,
+                    nome: 'Zed'
+                },
+                1: {
+                    imagem: QUINN,
+                    nome: 'Leesin'
+                },
+                2: {
+                    imagem: Kindred,
+                    nome: 'Kled'
+                },
+            },
+            spell: {
+                0: IGNITE,
+                1: EXAUST
+            },   
+        },
+        {
+            nome: 'Trynda',
+            tier: 'S+',
+            itens:{
+                0:martelo,
+                1:espada
+            },
+            foto: TRYNDA,
+            runaPrimaria: {
+                0: RITMO,
+                1: CURA,
+                2: ESPONTANIEDADE,
+                3: MORTE
+            },
+            runaSecundaria: {
+                0: DETER,
+                1: OSSO,
+                2: revitalizar
+            },
+            counters: {
+                0: {
+                    nome: '',
+                    imagem: 'ZED'
+                },
+                1: {
+                    nome: '',
+                    imagem: 'ZED'
+                },
+                2: {
+                    nome: '',
+                    imagem: 'ZED'
+                },
+            },
+            good: {
+                0: {
+                    imagem: darius,
+                    nome: 'Zed'
+                },
+                1: {
+                    imagem: LEESIN,
+                    nome: 'Leesin'
+                },
+                2: {
+                    imagem: BARDO,
+                    nome: 'Kled'
+                },
+            },
+            spell: {
+                0: IGNITE,
+                1: ghost
+            },   
+        },
+        {
+            nome: 'Evelyn',
+            tier: 'S+',
+            itens:{
+                0:orbeguard,
+                1:perola
+            },
+            foto: EVELYN,
+            runaPrimaria: {
+                0: CONQUEROR,
+                1: PRESENCA,
+                2: TENACIDADE,
+                3: MORTE
+            },
+            runaSecundaria: {
+                0: DETER,
+                1: OSSO,
+                2: revitalizar
+            },
+            counters: {
+                0: {
+                    nome: '',
+                    imagem: RENGAR
+                },
+                1: {
+                    nome: '',
+                    imagem: LEBLANC
+                },
+                2: {
+                    nome: '',
+                    imagem: REKSAY
+                },
+            },
+            good: {
+                0: {
+                    imagem: NOC,
+                    nome: 'Zed'
+                },
+                1: {
+                    imagem: BARDO,
+                    nome: 'Leesin'
+                },
+                2: {
+                    imagem: Aatrox,
+                    nome: 'Kled'
+                },
+            },
+            spell: {
+                0: IGNITE,
+                1: barreira
+            },   
+        },
+        {
+            nome: "Rek'Sai",
+            tier: 'S+',
+            itens:{
+                0:lamina,
+                1:espada
+            },
+            foto: REKSAY,
+            runaPrimaria: {
+                0: CHUVAS,
+                1: IMPACTO,
+                2: GLOBOS,
+                3: cacada       
+            },
+            runaSecundaria: {
+                0: DETER,
+                1: OSSO,
+                2: revitalizar
+            },
+            counters: {
+                0: {
+                    nome: '',
+                    imagem: NOC
+                },
+                1: {
+                    nome: '',
+                    imagem: darius
+                },
+                2: {
+                    nome: '',
+                    imagem: KLED
+                },
+            },
+            good: {
+                0: {
+                    imagem: Aatrox,
+                    nome: 'Zed'
+                },
+                1: {
+                    imagem: AKALI,
+                    nome: 'Leesin'
+                },
+                2: {
+                    imagem: RENGAR,
+                    nome: 'Kled'
+                },
+            },
+            spell: {
+                0: IGNITE,
+                1: bolinha
+            }
+        },
+        {
+            nome: 'Leblanc',
+            tier: 'S',
+            itens:{
+                0:orbeguard,
+                1:perola
+            },
+            foto: LEBLANC,
+            runaPrimaria: {
+                0: COMETA,
+                1: FAIXA,
+                2: TRANSCENDENCIA,
+                3: CHAMUSCAR
+            },
+            runaSecundaria: {
+                0: DETER,
+                1: OSSO,
+                2: revitalizar
+            },
+            counters: {
+                0: {
+                    nome: '',
+                    imagem: RUMBLE
+                },
+                1: {
+                    nome: '',
+                    imagem: REKSAY
+                },
+                2: {
+                    nome: '',
+                    imagem: RENGARAP
+                },
+            },
+            good: {
+                0: {
+                    imagem: RENEKTON,
+                    nome: 'Zed'
+                },
+                1: {
+                    imagem: NOC,
+                    nome: 'Leesin'
+                },
+                2: {
+                    imagem: WARWICK,
+                    nome: 'Kled'
+                },
+            },
+            spell: {
+                0: IGNITE,
+                1: barreira
+            }
+        },
+        {
+            nome: 'Zed',
+            tier: 'S',
+            foto: ZED,
+            itens:{
+                0:lamina,
+                1:espada
+            },
+            runaPrimaria: {
+                0: ELETRO,
+                1: IMPACTO,
+                2: GLOBOS,
+                3: cacada
+            },
+            runaSecundaria: {
+                0: FEITICARIA,
+                1: TRANSCENDENCIA,
+                2: CHAMUSCAR
+            },
+            counters: {
+                0: {
+                    nome: '',
+                    imagem: LEESIN
+                },
+                1: {
+                    nome: '',
+                    imagem: RENGAR
+                },
+                2: {
+                    nome: '',
+                    imagem: REKSAY
+                },
+            },
+            good: {
+                0: {
+                    imagem: Aatrox,
+                    nome: 'Zed'
+                },
+                1: {
+                    imagem: darius,
+                    nome: 'Leesin'
+                },
+                2: {
+                    imagem: QUINN,
+                    nome: 'Kled'
+                },
+            },
+            spell: {
+                0: IGNITE,
+                1: barreira
+            },   
+        },
+        {
+            nome: 'Nocturne',
+            tier: 'S',
+            foto: NOC,
+            itens:{
+                0:martelo,
+                1:gota
+            },
+            runaPrimaria: {
+                0: RITMO,
+                1: PRESENCA,
+                2: ESPONTANIEDADE,
+                3: MORTE
+            },
+            runaSecundaria: {
+                0: DETER,
+                1: OSSO,
+                2: revitalizar
+            },
+            counters: {
+                0: {
+                    nome: '',
+                    imagem: AKALI
+                },
+                1: {
+                    nome: '',
+                    imagem: WARWICK
+                },
+                2: {
+                    nome: '',
+                    imagem: LEBLANC
+                },
+            },
+            good: {
+                0: {
+                    imagem: REKSAY,
+                    nome: 'Zed'
+                },
+                1: {
+                    imagem: Aatrox,
+                    nome: 'Leesin'
+                },
+                2: {
+                    imagem: LEESIN,
+                    nome: 'Kled'
+                },
+            },
+            spell: {
+                0: IGNITE,
+                1: bolinha
+            },   
+        },
+        {
+            nome: 'Rengar AD',
+            tier: 'S',
+            itens:{
+                0:lamina,
+                1:espada
+            },
+            foto: RENGAR,
+            runaPrimaria: {
+                0: RITMO,
+                1: CURA,
+                2: LINHAGEM,
+                3: MORTE
+            },
+            runaSecundaria: {
+                0: DETER,
+                1: OSSO,
+                2: revitalizar
+            },
+            counters: {
+                0: {
+                    nome: '',
+                    imagem: darius
+                },
+                1: {
+                    nome: '',
+                    imagem: Aatrox
+                },
+                2: {
+                    nome: '',
+                    imagem: RENGAR
+                },
+            },
+            good: {
+                0: {
+                    imagem: ZED,
+                    nome: 'Zed'
+                },
+                1: {
+                    imagem: EVELYN,
+                    nome: 'Leesin'
+                },
+                2: {
+                    imagem: KHA,
+                    nome: 'Kled'
+                },
+            },
+            spell: {
+                0: IGNITE,
+                1: EXAUST
+            },   
+        },
+        {
+            nome: 'Rengar AP',
+            tier: 'S',
+            itens:{
+                0:orbeguard,
+                1:espada
+            },
+            foto: RENGARAP,
+            runaPrimaria: {
+                0: ELETRO,
+                1: IMPACTO,
+                2: GLOBOS,
+                3: cacada
+            },
+            runaSecundaria: {
+                0: DETER,
+                1: DEMOLIR,
+                2: revitalizar
+            },
+            counters: {
+                0: {
+                    nome: '',
+                    imagem: darius 
+                },
+                1: {
+                    nome: '',
+                    imagem: IRELIA
+                },
+                2: {
+                    nome: '',
+                    imagem: REKSAY
+                },
+            },
+            good: {
+                0: {
+                    imagem: ZED,
+                    nome: 'Zed'
+                },
+                1: {
+                    imagem: LEBLANC,
+                    nome: 'Leesin'
+                },
+                2: {
+                    imagem: KHA,
+                    nome: 'Kled'
+                },
+            },
+            spell: {
+                0: IGNITE,
+                1: barreira
+            },   
+        },
+        {
+            nome: 'Lee sin',
+            tier: 'S',
+            itens:{
+                0:berrante,
+                1:espada
+            },
+            foto: LEESIN,
+            runaPrimaria: {
+                0: GRASP,
+                1: golpeescudo,
+                2: OSSO,
+                3: revitalizar
+            },
+            runaSecundaria: {
+                0: FEITICARIA,
+                1: TRANSCENDENCIA,
+                2: CHAMUSCAR
+            },
+            counters: {
+                0: {
+                    nome: '',
+                    imagem: darius
+                },
+                1: {
+                    nome: '',
+                    imagem: Aatrox
+                },
+                2: {
+                    nome: '',
+                    imagem: NOC
+                },
+            },
+            good: {
+                0: {
+                    imagem: ZED,
+                    nome: 'Zed'
+                },
+                1: {
+                    imagem: AKALI,
+                    nome: 'Leesin'
+                },
+                2: {
+                    imagem: KHA,
+                    nome: 'Kled'
+                },
+            },
+            spell: {
+                0: IGNITE,
+                1: barreira
+            },   
+        },
+        {
+            nome: 'Aatrox',
+            tier: 'S',
+            itens:{
+                0:berrante,
+                1:espada
+            },
+            foto: Aatrox,
+            runaPrimaria: {
+                0: COMETA,
+                1: MANTOS,
+                2: TRANSCENDENCIA,
+                3: CHAMUSCAR
+            },
+            runaSecundaria: {
+                0: DETER,
+                1: OSSO,
+                2: revitalizar
+            },
+            counters: {
+                0: {
+                    nome: '',
+                    imagem: NOC
+                },
+                1: {
+                    nome: '',
+                    imagem: REKSAY
+                },
+                2: {
+                    nome: '',
+                    imagem: ZED
+                },
+            },
+            good: {
+                0: {
+                    imagem: KHA,
+                    nome: 'Zed'
+                },
+                1: {
+                    imagem: LEESIN,
+                    nome: 'Leesin'
+                },
+                2: {
+                    imagem: darius  ,
+                    nome: 'Kled'
+                },
+            },
+            spell: {
+                0: IGNITE,
+                1: barreira
+            },   
         },
         {
             nome: 'Kha Zix',
             tier: 'S',
             foto: KHA,
+            itens:{
+                0:lamina,
+                1:gota
+            },
             runaPrimaria: {
                 0: COMETA,
                 1: FAIXA,
@@ -160,12 +805,16 @@ const Content = () => {
             },
             spell: {
                 0: IGNITE,
-                1: EXAUST
+                1: barreira
             }
-        },
+        },       
         {
             nome: 'Yorick',
-            tier: 'S',
+            tier: 'A',
+            itens:{
+                0:berrante,
+                1:gota
+            },
             foto: YORICK,
             runaPrimaria: {
                 0: GRASP,
@@ -181,7 +830,7 @@ const Content = () => {
             counters: {
                 0: {
                     nome: '',
-                    imagem: ZED
+                    imagem: IRELIA
                 },
                 1: {
                     nome: '',
@@ -194,314 +843,30 @@ const Content = () => {
             },
             good: {
                 0: {
-                    imagem: ZED,
+                    imagem: BARDO,
                     nome: 'Zed'
                 },
                 1: {
-                    imagem: LEESIN,
+                    imagem: 'LEESIN',
                     nome: 'Leesin'
                 },
                 2: {
-                    imagem: KLED,
+                    imagem: 'KLED',
                     nome: 'Kled'
                 },
             },
             spell: {
                 0: IGNITE,
-                1: EXAUST
+                1: barreira
             },   
-        },
-        {
-            nome: 'Aatrox',
-            tier: 'S',
-            foto: Aatrox,
-            runaPrimaria: {
-                0: COMETA,
-                1: MANTOS,
-                2: TRANSCENDENCIA,
-                3: CHAMUSCAR
-            },
-            runaSecundaria: {
-                0: DETER,
-                1: OSSO,
-                2: revitalizar
-            },
-            counters: {
-                0: {
-                    nome: '',
-                    imagem: NOC
-                },
-                1: {
-                    nome: '',
-                    imagem: REKSAY
-                },
-                2: {
-                    nome: '',
-                    imagem: ZED
-                },
-            },
-            good: {
-                0: {
-                    imagem: KHA,
-                    nome: 'Zed'
-                },
-                1: {
-                    imagem: LEESIN,
-                    nome: 'Leesin'
-                },
-                2: {
-                    imagem: KLED,
-                    nome: 'Kled'
-                },
-            },
-            spell: {
-                0: IGNITE,
-                1: EXAUST
-            },   
-        },
-        {
-            nome: 'Trynda',
-            tier: 'S',
-            foto: TRYNDA,
-            runaPrimaria: {
-                0: RITMO,
-                1: CURA,
-                2: ESPONTANIEDADE,
-                3: MORTE
-            },
-            runaSecundaria: {
-                0: DETER,
-                1: OSSO,
-                2: revitalizar
-            },
-            counters: {
-                0: {
-                    nome: '',
-                    imagem: ZED
-                },
-                1: {
-                    nome: '',
-                    imagem: ZED
-                },
-                2: {
-                    nome: '',
-                    imagem: ZED
-                },
-            },
-            good: {
-                0: {
-                    imagem: ZED,
-                    nome: 'Zed'
-                },
-                1: {
-                    imagem: LEESIN,
-                    nome: 'Leesin'
-                },
-                2: {
-                    imagem: KLED,
-                    nome: 'Kled'
-                },
-            },
-            spell: {
-                0: IGNITE,
-                1: EXAUST
-            },   
-        },
-        {
-            nome: 'Renekton',
-            tier: 'S',
-            foto: RENEKTON,
-            runaPrimaria: {
-                0: CONQUEROR,
-                1: CURA,
-                2: ESPONTANIEDADE,
-                3: MORTE
-            },
-            runaSecundaria: {
-                0: DETER,
-                1: OSSO,
-                2: revitalizar
-            },
-            counters: {
-                0: {
-                    nome: '',
-                    imagem: ZED
-                },
-                1: {
-                    nome: '',
-                    imagem: ZED
-                },
-                2: {
-                    nome: '',
-                    imagem: ZED
-                },
-            },
-            good: {
-                0: {
-                    imagem: ZED,
-                    nome: 'Zed'
-                },
-                1: {
-                    imagem: LEESIN,
-                    nome: 'Leesin'
-                },
-                2: {
-                    imagem: KLED,
-                    nome: 'Kled'
-                },
-            },
-            spell: {
-                0: IGNITE,
-                1: EXAUST
-            },   
-        },
-        {
-            nome: ' Bardo',
-            tier: 'S',
-            foto: BARDO,
-            runaPrimaria: {
-                0: RITMO,
-                1: PRESENCA,
-                2: ESPONTANIEDADE,
-                3: GOLPE
-            },
-            runaSecundaria: {
-                0: DETER,
-                1: OSSO,
-                2: revitalizar
-            },
-            counters: {
-                0: {
-                    nome: '',
-                    imagem: ZED
-                },
-                1: {
-                    nome: '',
-                    imagem: ZED
-                },
-                2: {
-                    nome: '',
-                    imagem: ZED
-                },
-            },
-            good: {
-                0: {
-                    imagem: ZED,
-                    nome: 'Zed'
-                },
-                1: {
-                    imagem: LEESIN,
-                    nome: 'Leesin'
-                },
-                2: {
-                    imagem: KLED,
-                    nome: 'Kled'
-                },
-            },
-            spell: {
-                0: IGNITE,
-                1: EXAUST
-            },   
-        },
-        {
-            nome: 'Rengar AD',
-            tier: 'S',
-            foto: RENGAR,
-            runaPrimaria: {
-                0: AGILIDADE,
-                1: CURA,
-                2: LINHAGEM,
-                3: MORTE
-            },
-            runaSecundaria: {
-                0: DETER,
-                1: OSSO,
-                2: revitalizar
-            },
-            counters: {
-                0: {
-                    nome: '',
-                    imagem: ZED
-                },
-                1: {
-                    nome: '',
-                    imagem: ZED
-                },
-                2: {
-                    nome: '',
-                    imagem: ZED
-                },
-            },
-            good: {
-                0: {
-                    imagem: ZED,
-                    nome: 'Zed'
-                },
-                1: {
-                    imagem: LEESIN,
-                    nome: 'Leesin'
-                },
-                2: {
-                    imagem: KLED,
-                    nome: 'Kled'
-                },
-            },
-            spell: {
-                0: IGNITE,
-                1: EXAUST
-            },   
-        },
-        {
-            nome: 'Rengar AP',
-            tier: 'S',
-            foto: RENGARAP,
-            runaPrimaria: {
-                0: ELETRO,
-                1: IMPACTO,
-                2: GLOBOS,
-                3: cacada
-            },
-            runaSecundaria: {
-                0: DETER,
-                1: DEMOLIR,
-                2: revitalizar
-            },
-            counters: {
-                0: {
-                    nome: '',
-                    imagem: ZED
-                },
-                1: {
-                    nome: '',
-                    imagem: ZED
-                },
-                2: {
-                    nome: '',
-                    imagem: ZED
-                },
-            },
-            good: {
-                0: {
-                    imagem: ZED,
-                    nome: 'Zed'
-                },
-                1: {
-                    imagem: LEESIN,
-                    nome: 'Leesin'
-                },
-                2: {
-                    imagem: KLED,
-                    nome: 'Kled'
-                },
-            },
-            spell: {
-                0: IGNITE,
-                1: EXAUST
-            },   
-        },
+        }, 
         {
             nome: 'Kindred',
-            tier: 'S',
+            tier: 'A',
+            itens:{
+                0:martelo,
+                1:bota
+            },
             foto: Kindred,
             runaPrimaria: {
                 0: RITMO,
@@ -517,76 +882,28 @@ const Content = () => {
             counters: {
                 0: {
                     nome: '',
-                    imagem: ZED
+                    imagem: REKSAY
                 },
                 1: {
                     nome: '',
-                    imagem: ZED
+                    imagem: AKALI
                 },
                 2: {
                     nome: '',
-                    imagem: ZED
+                    imagem: LEBLANC
                 },
             },
             good: {
                 0: {
-                    imagem: ZED,
+                    imagem: RENEKTON,
                     nome: 'Zed'
                 },
                 1: {
-                    imagem: LEESIN,
+                    imagem: WARWICK,
                     nome: 'Leesin'
                 },
                 2: {
-                    imagem: KLED,
-                    nome: 'Kled'
-                },
-            },
-            spell: {
-                0: IGNITE,
-                1: EXAUST
-            },   
-        },
-        {
-            nome: 'Evelyn',
-            tier: 'S',
-            foto: EVELYN,
-            runaPrimaria: {
-                0: CONQUEROR,
-                1: PRESENCA,
-                2: TENACIDADE,
-                3: MORTE
-            },
-            runaSecundaria: {
-                0: DETER,
-                1: OSSO,
-                2: revitalizar
-            },
-            counters: {
-                0: {
-                    nome: '',
-                    imagem: ZED
-                },
-                1: {
-                    nome: '',
-                    imagem: ZED
-                },
-                2: {
-                    nome: '',
-                    imagem: ZED
-                },
-            },
-            good: {
-                0: {
-                    imagem: ZED,
-                    nome: 'Zed'
-                },
-                1: {
-                    imagem: LEESIN,
-                    nome: 'Leesin'
-                },
-                2: {
-                    imagem: KLED,
+                    imagem: darius,
                     nome: 'Kled'
                 },
             },
@@ -597,7 +914,11 @@ const Content = () => {
         },
         {
             nome: 'Irelia',
-            tier: 'S',
+            tier: 'A',
+            itens:{
+                0:martelo,
+                1:espada
+            },
             foto: IRELIA,
             runaPrimaria: {
                 0: CONQUEROR,
@@ -613,28 +934,28 @@ const Content = () => {
             counters: {
                 0: {
                     nome: '',
-                    imagem: ZED
+                    imagem: AKALI
                 },
                 1: {
                     nome: '',
-                    imagem: ZED
+                    imagem: NOC
                 },
                 2: {
                     nome: '',
-                    imagem: ZED
+                    imagem: RENEKTON
                 },
             },
             good: {
                 0: {
-                    imagem: ZED,
+                    imagem: Aatrox,
                     nome: 'Zed'
                 },
                 1: {
-                    imagem: LEESIN,
+                    imagem: QUINN,
                     nome: 'Leesin'
                 },
                 2: {
-                    imagem: KLED,
+                    imagem: YORICK,
                     nome: 'Kled'
                 },
             },
@@ -645,7 +966,11 @@ const Content = () => {
         },
         {
             nome: 'Kled',
-            tier: 'S',
+            tier: 'A',
+            itens:{
+                0:lamina,
+                1:espada
+            },
             foto: KLED,
             runaPrimaria: {
                 0: CONQUEROR,
@@ -661,39 +986,43 @@ const Content = () => {
             counters: {
                 0: {
                     nome: '',
-                    imagem: ZED
+                    imagem: TRYNDA
                 },
                 1: {
                     nome: '',
-                    imagem: ZED
+                    imagem: LEBLANC
                 },
                 2: {
                     nome: '',
-                    imagem: ZED
+                    imagem: RUMBLE
                 },
             },
             good: {
                 0: {
-                    imagem: ZED,
+                    imagem: REKSAY,
                     nome: 'Zed'
                 },
                 1: {
-                    imagem: LEESIN,
+                    imagem: darius,
                     nome: 'Leesin'
                 },
                 2: {
-                    imagem: KLED,
+                    imagem: Aatrox,
                     nome: 'Kled'
                 },
             },
             spell: {
                 0: IGNITE,
-                1: EXAUST
+                1: barreira
             },   
         },
         {
             nome: 'Warwick',
-            tier: 'S',
+            tier: 'A',
+            itens:{
+                0:martelo,
+                1:gota
+            },
             foto: WARWICK,
             runaPrimaria: {
                 0: RITMO,
@@ -709,43 +1038,47 @@ const Content = () => {
             counters: {
                 0: {
                     nome: '',
-                    imagem: ZED
+                    imagem: Kindred
                 },
                 1: {
                     nome: '',
-                    imagem: ZED
+                    imagem: Aatrox
                 },
                 2: {
                     nome: '',
-                    imagem: ZED
+                    imagem: AKALI
                 },
             },
             good: {
                 0: {
-                    imagem: ZED,
+                    imagem: KHA,
                     nome: 'Zed'
                 },
                 1: {
-                    imagem: LEESIN,
+                    imagem: NOC,
                     nome: 'Leesin'
                 },
                 2: {
-                    imagem: KLED,
+                    imagem: IRELIA,
                     nome: 'Kled'
                 },
             },
             spell: {
                 0: IGNITE,
-                1: EXAUST
+                1: barreira
             },   
-        },
+        },      
         {
-            nome: 'Nocturn',
-            tier: 'S',
-            foto: NOC,
+            nome: 'Renekton',
+            tier: 'A',
+            itens:{
+                0:berrante,
+                1:espada
+            },
+            foto: RENEKTON,
             runaPrimaria: {
-                0: RITMO,
-                1: PRESENCA,
+                0: CONQUEROR,
+                1: CURA,
                 2: ESPONTANIEDADE,
                 3: MORTE
             },
@@ -757,28 +1090,28 @@ const Content = () => {
             counters: {
                 0: {
                     nome: '',
-                    imagem: ZED
+                    imagem: Aatrox
                 },
                 1: {
                     nome: '',
-                    imagem: ZED
+                    imagem: Kindred
                 },
                 2: {
                     nome: '',
-                    imagem: ZED
+                    imagem: LEBLANC
                 },
             },
             good: {
                 0: {
-                    imagem: ZED,
+                    imagem: IRELIA,
                     nome: 'Zed'
                 },
                 1: {
-                    imagem: LEESIN,
+                    imagem: AKALI,
                     nome: 'Leesin'
                 },
                 2: {
-                    imagem: KLED,
+                    imagem: LEESIN,
                     nome: 'Kled'
                 },
             },
@@ -786,202 +1119,14 @@ const Content = () => {
                 0: IGNITE,
                 1: EXAUST
             },   
-        },
-        {
-            nome: 'Rumble',
-            tier: 'S',
-            foto: RUMBLE,
-            runaPrimaria: {
-                0: COMETA,
-                1: MANTOS,
-                2: TRANSCENDENCIA,
-                3: CHAMUSCAR
-            },
-            runaSecundaria: {
-                0: DETER,
-                1: OSSO,
-                2: revitalizar
-            },
-            counters: {
-                0: {
-                    nome: '',
-                    imagem: ZED
-                },
-                1: {
-                    nome: '',
-                    imagem: ZED
-                },
-                2: {
-                    nome: '',
-                    imagem: ZED
-                },
-            },
-            good: {
-                0: {
-                    imagem: ZED,
-                    nome: 'Zed'
-                },
-                1: {
-                    imagem: LEESIN,
-                    nome: 'Leesin'
-                },
-                2: {
-                    imagem: KLED,
-                    nome: 'Kled'
-                },
-            },
-            spell: {
-                0: IGNITE,
-                1: EXAUST
-            },   
-        },
-        {
-            nome: 'Leblanc',
-            tier: 'S',
-            foto: LEBLANC,
-            runaPrimaria: {
-                0: COMETA,
-                1: FAIXA,
-                2: TRANSCENDENCIA,
-                3: CHAMUSCAR
-            },
-            runaSecundaria: {
-                0: DETER,
-                1: OSSO,
-                2: revitalizar
-            },
-            counters: {
-                0: {
-                    nome: '',
-                    imagem: ZED
-                },
-                1: {
-                    nome: '',
-                    imagem: ZED
-                },
-                2: {
-                    nome: '',
-                    imagem: ZED
-                },
-            },
-            good: {
-                0: {
-                    imagem: ZED,
-                    nome: 'Zed'
-                },
-                1: {
-                    imagem: LEESIN,
-                    nome: 'Leesin'
-                },
-                2: {
-                    imagem: KLED,
-                    nome: 'Kled'
-                },
-            },
-            spell: {
-                0: IGNITE,
-                1: EXAUST
-            }
-        },
-        {
-            nome: "Rek'Sai",
-            tier: 'S',
-            foto: REKSAY,
-            runaPrimaria: {
-                0: CHUVAS,
-                1: IMPACTO,
-                2: GLOBOS,
-                3: cacada       
-            },
-            runaSecundaria: {
-                0: DETER,
-                1: OSSO,
-                2: revitalizar
-            },
-            counters: {
-                0: {
-                    nome: '',
-                    imagem: ZED
-                },
-                1: {
-                    nome: '',
-                    imagem: ZED
-                },
-                2: {
-                    nome: '',
-                    imagem: ZED
-                },
-            },
-            good: {
-                0: {
-                    imagem: ZED,
-                    nome: 'Zed'
-                },
-                1: {
-                    imagem: LEESIN,
-                    nome: 'Leesin'
-                },
-                2: {
-                    imagem: KLED,
-                    nome: 'Kled'
-                },
-            },
-            spell: {
-                0: IGNITE,
-                1: EXAUST
-            }
-        },
-        {
-            nome: 'Zed',
-            tier: 'S',
-            foto: ZED,
-            runaPrimaria: {
-                0: ELETRO,
-                1: IMPACTO,
-                2: GLOBOS,
-                3: cacada
-            },
-            runaSecundaria: {
-                0: FEITICARIA,
-                1: TRANSCENDENCIA,
-                2: CHAMUSCAR
-            },
-            counters: {
-                0: {
-                    nome: '',
-                    imagem: ZED
-                },
-                1: {
-                    nome: '',
-                    imagem: ZED
-                },
-                2: {
-                    nome: '',
-                    imagem: ZED
-                },
-            },
-            good: {
-                0: {
-                    imagem: ZED,
-                    nome: 'Zed'
-                },
-                1: {
-                    imagem: LEESIN,
-                    nome: 'Leesin'
-                },
-                2: {
-                    imagem: KLED,
-                    nome: 'Kled'
-                },
-            },
-            spell: {
-                0: IGNITE,
-                1: EXAUST
-            },   
-        },
+        },  
         {
             nome: 'Quinn',
-            tier: 'S',
+            tier: 'A',
+            itens:{
+                0:martelo,
+                1:bota
+            },
             foto: QUINN,
             runaPrimaria: {
                 0: RITMO,
@@ -997,87 +1142,43 @@ const Content = () => {
             counters: {
                 0: {
                     nome: '',
-                    imagem: ZED
+                    imagem: REKSAY
                 },
                 1: {
                     nome: '',
-                    imagem: ZED
+                    imagem: LEBLANC
                 },
                 2: {
                     nome: '',
-                    imagem: ZED
+                    imagem: IRELIA
                 },
             },
             good: {
                 0: {
-                    imagem: ZED,
+                    imagem: darius,
                     nome: 'Zed'
                 },
                 1: {
-                    imagem: LEESIN,
+                    imagem: YORICK,
                     nome: 'Leesin'
                 },
                 2: {
-                    imagem: KLED,
+                    imagem: RENEKTON,
                     nome: 'Kled'
                 },
             },
             spell: {
                 0: IGNITE,
-                1: EXAUST
-            },   
-        },
-        {
-            nome: 'Lee sin',
-            tier: 'S',
-            foto: LEESIN,
-            runaPrimaria: {
-                0: GRASP,
-                1: golpeescudo,
-                2: OSSO,
-                3: revitalizar
-            },
-            runaSecundaria: {
-                0: FEITICARIA,
-                1: TRANSCENDENCIA,
-                2: CHAMUSCAR
-            },
-            counters: {
-                0: {
-                    nome: '',
-                    imagem: ZED
-                },
-                1: {
-                    nome: '',
-                    imagem: ZED
-                },
-                2: {
-                    nome: '',
-                    imagem: ZED
-                },
-            },
-            good: {
-                0: {
-                    imagem: ZED,
-                    nome: 'Zed'
-                },
-                1: {
-                    imagem: LEESIN,
-                    nome: 'Leesin'
-                },
-                2: {
-                    imagem: KLED,
-                    nome: 'Kled'
-                },
-            },
-            spell: {
-                0: IGNITE,
-                1: EXAUST
+                1: ghost
             },   
         },
         {
             nome: 'Nunu',
-            tier: 'S',
+            tier: 'A',
+            itens:{
+                0:berrante,
+                1:gota
+            },
             foto: nunu,
             runaPrimaria: {
                 0: GRASP,
@@ -1093,76 +1194,28 @@ const Content = () => {
             counters: {
                 0: {
                     nome: '',
-                    imagem: ZED
+                    imagem: darius
                 },
                 1: {
                     nome: '',
-                    imagem: ZED
+                    imagem: Aatrox
                 },
                 2: {
                     nome: '',
-                    imagem: ZED
+                    imagem: EVELYN
                 },
             },
             good: {
                 0: {
-                    imagem: ZED,
+                    imagem: LEBLANC,
                     nome: 'Zed'
                 },
                 1: {
-                    imagem: LEESIN,
+                    imagem: RENEKTON,
                     nome: 'Leesin'
                 },
                 2: {
-                    imagem: KLED,
-                    nome: 'Kled'
-                },
-            },
-            spell: {
-                0: IGNITE,
-                1: EXAUST
-            },   
-        },
-        {
-            nome: 'Udyr',
-            tier: 'S',
-            foto: udyr,
-            runaPrimaria: {
-                0: GRASP,
-                1: DEMOLIR,
-                2: OSSO,
-                3: revitalizar
-            },
-            runaSecundaria: {
-                0: inspiracao,
-                1: pulverizador,
-                2: perspicacia
-            },
-            counters: {
-                0: {
-                    nome: '',
-                    imagem: ZED
-                },
-                1: {
-                    nome: '',
-                    imagem: ZED
-                },
-                2: {
-                    nome: '',
-                    imagem: ZED
-                },
-            },
-            good: {
-                0: {
                     imagem: ZED,
-                    nome: 'Zed'
-                },
-                1: {
-                    imagem: LEESIN,
-                    nome: 'Leesin'
-                },
-                2: {
-                    imagem: KLED,
                     nome: 'Kled'
                 },
             },
@@ -1174,6 +1227,10 @@ const Content = () => {
         {
             nome: 'Darius',
             tier: 'S',
+            itens:{
+                0:berrante,
+                1:bota
+            },
             foto: darius,
             runaPrimaria: {
                 0: RITMO,
@@ -1189,28 +1246,28 @@ const Content = () => {
             counters: {
                 0: {
                     nome: '',
-                    imagem: ZED
+                    imagem: AKALI
                 },
                 1: {
                     nome: '',
-                    imagem: ZED
+                    imagem: Aatrox
                 },
                 2: {
                     nome: '',
-                    imagem: ZED
+                    imagem: LEBLANC
                 },
             },
             good: {
                 0: {
-                    imagem: ZED,
+                    imagem: BARDO,
                     nome: 'Zed'
                 },
                 1: {
-                    imagem: LEESIN,
+                    imagem: REKSAY,
                     nome: 'Leesin'
                 },
                 2: {
-                    imagem: KLED,
+                    imagem: LEESIN,
                     nome: 'Kled'
                 },
             },
@@ -1221,7 +1278,11 @@ const Content = () => {
         },
         {
             nome: 'Gragas',
-            tier: 'S',
+            tier: 'A',
+            itens:{
+                0:orbeguard,
+                1:gota
+            },
             foto: gragas,
             runaPrimaria: {
                 0: COMETA,
@@ -1237,28 +1298,28 @@ const Content = () => {
             counters: {
                 0: {
                     nome: '',
-                    imagem: ZED
+                    imagem: KHA
                 },
                 1: {
                     nome: '',
-                    imagem: ZED
+                    imagem: Aatrox
                 },
                 2: {
                     nome: '',
-                    imagem: ZED
+                    imagem: AKALI
                 },
             },
             good: {
                 0: {
-                    imagem: ZED,
+                    imagem: NOC,
                     nome: 'Zed'
                 },
                 1: {
-                    imagem: LEESIN,
+                    imagem: RENEKTON,
                     nome: 'Leesin'
                 },
                 2: {
-                    imagem: KLED,
+                    imagem: ZED,
                     nome: 'Kled'
                 },
             },
@@ -1269,7 +1330,11 @@ const Content = () => {
         },
         {
             nome: 'Tahm Kentch',
-            tier: 'S',
+            tier: 'A',
+            itens:{
+                0:berrante,
+                1:perola
+            },
             foto: tahm,
             runaPrimaria: {
                 0: IMPETO,
@@ -1298,7 +1363,7 @@ const Content = () => {
             },
             good: {
                 0: {
-                    imagem: ZED,
+                    imagem: RUMBLE,
                     nome: 'Zed'
                 },
                 1: {
@@ -1306,7 +1371,59 @@ const Content = () => {
                     nome: 'Leesin'
                 },
                 2: {
-                    imagem: KLED,
+                    imagem: 'KLED',
+                    nome: 'Kled'
+                },
+            },
+            spell: {
+                0: IGNITE,
+                1: ghost
+            },   
+        },
+        {
+            nome: 'Udyr',
+            tier: 'B',
+            itens:{
+                0:berrante,
+                1:gota
+            },
+            foto: udyr,
+            runaPrimaria: {
+                0: GRASP,
+                1: DEMOLIR,
+                2: OSSO,
+                3: revitalizar
+            },
+            runaSecundaria: {
+                0: inspiracao,
+                1: pulverizador,
+                2: perspicacia
+            },
+            counters: {
+                0: {
+                    nome: '',
+                    imagem: darius
+                },
+                1: {
+                    nome: '',
+                    imagem: Aatrox
+                },
+                2: {
+                    nome: '',
+                    imagem: Kindred
+                },
+            },
+            good: {
+                0: {
+                    imagem: KHA,
+                    nome: 'Zed'
+                },
+                1: {
+                    imagem: AKALI,
+                    nome: 'Leesin'
+                },
+                2: {
+                    imagem: 'KLED',
                     nome: 'Kled'
                 },
             },
@@ -1324,7 +1441,7 @@ const Content = () => {
         <div className='imageBc' style={{ display: 'flex', justifyContent: 'center' }}>
             <div className='position' style = {{paddingBottom:'100px'}}>
 
-                {heros.map(({ foto, counters, good, spell, runaPrimaria, runaSecundaria, tier, nome }) => {
+                {heros.map(({ foto, counters, good, spell, runaPrimaria, runaSecundaria, tier, nome,itens}) => {
 
                     return (
                         <Cards
@@ -1336,6 +1453,7 @@ const Content = () => {
                             runaPrimaria={runaPrimaria}
                             runaSecundaria={runaSecundaria}
                             tier={tier}
+                            itens = {itens}
                             nome={nome} />
                     )
                 })}
