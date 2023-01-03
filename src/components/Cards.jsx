@@ -23,7 +23,7 @@ const Cards = ({ foto, counters, good, spell, runaPrimaria, runaSecundaria, tier
                     <div style={{ width: '100%', height: '50%', display: 'flex' }}>
                         <img alt='' src={spell[0]} style={{ width: '20%', height: '80%', marginTop: '5%' }}></img>
                         <img alt='' src={spell[1]} style={{ marginLeft: '5%', width: '20%', height: '80%', marginTop: '5%' }}></img>
-                        <div style={{ fontSize: '25 px', alignSelf: 'center', marginLeft: '8%', marginTop: '12%' }}>Tier: <span style={{ color: 'red' }}>{tier}</span></div>
+                        <div style={{ fontSize: '25px', alignSelf: 'center', marginLeft: '8%', marginTop: '12%' }}>Tier: <span style={{ color: 'red' }}>{tier}</span></div>
                     </div>
                 </div>
             </div>
