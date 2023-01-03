@@ -22,7 +22,7 @@ body {
 }
 
 .position {
-  width: 100vw;
+  width: 2000px;
   max-width: 2500px;
   display: block;
   background-color: rgb(27, 26, 26);
@@ -44,7 +44,8 @@ body {
 
 .banner {
   background-image: url(./components/imgs/personalbanner.png);
-  width: 100vw;
+  width: 2000px;
+  max-width: 2500px;
   background-size: 100% 100%;
   max-width: 2500px;
   filter: brightness(100%);
